@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 252, 130);
+  color: dimgrey;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px;
+}
+h1 {
+  margin: 20px;
+}
+
+.photo {
+  border-radius: 5%;
+  width: 50%;
+  height: 10%;
+}
+
+.bio {
+  background-color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5%;
+  width: 50%;
+  color: dimgrey;
+  padding: 20px;
+  text-align: left;
+  font-size: larger;
+  flex-grow: 1;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+}
