@@ -22,12 +22,35 @@ a .profile {
   height: 50px;
   border-radius: 50%;
 }
+main {
+  text-align: center;
+  width: 90vw;
+  display: block;
+}
+.teamPic {
+  min-width: 100%;
+}
 .toProfile {
   border: salmon solid 1px;
-  width: 300px;
+  background-color: aquamarine;
+  color: blueviolet;
+  width: 100px;
   padding: 5px;
 }
 .teamPic {
   width: 40%;
   border-radius: 25%;
+}
+
+@media (min-width: 640px) {
+  main {
+    width: 70vmax;
+  }
+}
+@media (min-width: 960px) {
+  main {
+    width: 60vmax;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
