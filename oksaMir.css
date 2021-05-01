@@ -7,35 +7,71 @@ html {
   box-sizing: inherit;
 }
 body {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(44, 44, 97);
   color: palevioletred;
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
 }
+header {
+  width: 95vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon {
+  align-self: flex-end;
+}
+a {
+  text-decoration: none;
+}
+a .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+main {
+  text-align: center;
+  width: 90vw;
+  display: block;
+}
+
 h1 {
   margin: 20px;
 }
 
 .photo {
-  border-radius: 50%;
-  width: 15%;
+  width: 50%;
+  border-radius: 10%;
 }
 
 .bio {
   background-color: aliceblue;
-  width: 40%;
   color: purple;
   padding: 20px;
   text-align: center;
   font-size: larger;
-  flex-grow: 1;
   margin: 10px;
 }
 a {
   text-decoration: none;
   color: aliceblue;
   padding: 10px;
+}
+
+@media (min-width: 640px) {
+  main {
+    width: 60vmax;
+  }
+}
+@media (min-width: 960px) {
+  main {
+    width: 50vmax;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
