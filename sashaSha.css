@@ -6,6 +6,30 @@ html {
 ::before {
   box-sizing: inherit;
 }
+header {
+  position: fixed;
+  width: 100vw;
+  background-color: dimgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  top: 0px;
+}
+.logo {
+  border-radius: 5%;
+}
+.icon {
+  align-self: flex-end;
+}
+a {
+  text-decoration: none;
+}
+a .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
 body {
   display: flex;
@@ -15,32 +39,54 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  padding: 20px;
 }
 h1 {
-  margin: 20px;
+  font-family: 'Montserrat', sans-serif, bold;
+  text-align: center;
+}
+p {
+  letter-spacing: 2px;
+  line-height: 30px;
 }
 
 .photo {
-  border-radius: 5%;
-  width: 50%;
-  height: 10%;
+  border-radius: 10px 10px 0 0;
+  width: 80%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
 }
 
 .bio {
   background-color: aliceblue;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 5%;
-  width: 50%;
+  border-radius: 0 0 10px 10px;
+  width: 80%;
   color: dimgrey;
-  padding: 20px;
+  padding: 60px;
   text-align: left;
   font-size: larger;
   flex-grow: 1;
-  margin: 10px;
+  margin: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
 }
-a {
-  text-decoration: none;
-  color: aliceblue;
-  padding: 10px;
+
+.icons {
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  color: dimgrey;
+}
+
+@media (min-width: 640px) {
+  main {
+    width: 60vmax;
+  }
+}
+@media (min-width: 960px) {
+  main {
+    width: 50vmax;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
