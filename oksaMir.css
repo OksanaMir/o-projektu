@@ -7,19 +7,22 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: rgb(44, 44, 97);
-  color: palevioletred;
-
+  max-width: 100vw;
+  background-color: rgb(252, 252, 130);
+  color: dimgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: left;
 }
 header {
-  width: 95vw;
-
+  width: 100vw;
+  position: fixed;
+  background-color: dimgrey;
+  padding: 20px;
+  top: 0px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .icon {
@@ -36,26 +39,40 @@ a .profile {
 
 main {
   text-align: center;
-  width: 90vw;
+  width: 100vmin;
   display: block;
+  margin-top: 90px;
+  padding: 0 10px 0 10px;
 }
 
 h1 {
-  margin: 20px;
+  font-family: 'Montserrat', sans-serif, bold;
+  text-align: center;
+}
+p {
+  letter-spacing: 2px;
+  line-height: 30px;
 }
 
 .photo {
-  width: 50%;
-  border-radius: 10%;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
 }
 
 .bio {
   background-color: aliceblue;
-  color: purple;
+  color: dimgrey;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
   padding: 20px;
   text-align: center;
   font-size: larger;
-  margin: 10px;
+  flex-grow: 1;
+  margin: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
 }
 a {
   text-decoration: none;
