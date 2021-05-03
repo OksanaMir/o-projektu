@@ -16,22 +16,26 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  margin: 0;
 }
 header {
   width: 100vw;
   position: sticky;
   background-color: dimgrey;
-  padding: 20px;
+  padding: 15px;
   top: 0px;
   display: flex;
   justify-content: space-between;
 }
 .menu {
   align-self: flex-end;
+  margin-bottom: 35px;
 }
 a {
   text-decoration: none;
   color: aliceblue;
+  margin: 15px;
+  font-size: larger;
 }
 a .profile {
   justify-items: baseline;
@@ -100,6 +104,10 @@ p {
 }
 .fa:hover {
   opacity: 0.7;
+}
+.shop {
+  font-size: larger;
+  color: dimgrey;
 }
 
 @media (min-width: 640px) {

@@ -24,16 +24,19 @@ header {
   background-color: dimgrey;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   top: 0px;
 }
 
 .menu {
   align-self: flex-end;
+  margin-bottom: 35px;
 }
 a {
   text-decoration: none;
   color: aliceblue;
+  margin: 15px;
+  font-size: larger;
 }
 a .profile {
   width: 50px;
