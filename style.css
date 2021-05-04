@@ -96,7 +96,7 @@ header {
   outline: 1px solid black;
   pointer-events: all;
 }
-.inside {
+.insideMenu {
   z-index: 4;
   position: absolute;
   top: 0;
@@ -184,6 +184,12 @@ p {
   margin-top: 20px;
   filter: grayscale(75%) hue-rotate(10deg);
 }
+.nafteeCoffee {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
 .icons {
   width: 100%;
   display: flex;
