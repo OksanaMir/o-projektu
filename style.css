@@ -191,6 +191,7 @@ p {
 }
 .linkname {
   font-size: 19px;
+  margin: 0;
 }
 
 .description a {
